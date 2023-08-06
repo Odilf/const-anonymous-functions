@@ -1,6 +1,8 @@
 # const-anonymous-functions
 
-Small crate that provides a macro to create anonymous functions that can be used in const contexts.
+Small crate that provides a macro to create anonymous functions that can be used in const contexts. 
+
+It doesn't provide any new functionality, only syntax sugar. 
 
 ## Usage
 
