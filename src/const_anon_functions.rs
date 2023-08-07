@@ -7,7 +7,7 @@
 /// See the [module-level documentation](crate) for more info.
 #[macro_export]
 macro_rules! caf {
-	(|$($arg:tt: $arg_ty:tt),*| $(-> $return_ty:tt)? { $body:expr }) => {
+	(|$($arg:tt: $arg_ty:ty),*| $(-> $return_ty:ty)? { $body:expr }) => {
 		{
 			const fn __anon_caf__($($arg: $arg_ty),*) $(-> $return_ty)? {
 				$body
